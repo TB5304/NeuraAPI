@@ -1,0 +1,37 @@
+# Ignore Help.md (Documentation)
+HELP.md
+
+# Ignore target build directory (except Maven Wrapper JAR)
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+
+# Ignore Gradle build files
+.gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+gradle-app.setting
+
+# Ignore STS (Spring Tool Suite) IDE files
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache
+
+# Ignore logs and temp files
+logs/
+*.log
+*.log.*
+hs_err_pid*
+.dmp
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+desktop.ini
