@@ -1,8 +1,5 @@
 package com.neura.model;
 
-import java.time.LocalDateTime;
-import java.util.Map;
-
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -25,9 +22,9 @@ public class ApiCallLog {
     private String requestBody;
     private String responseBody;
     private int statusCode;
-    
-    private LocalDateTime timestamp;
-    private Map<String, String> headers ;
-    private Map<String, String[]> parameters ;
-
+    private long timetaken;
+    private String timestamp; 
+    private String headers;  
+    private String responseHeaders;  
+    private String queryParams;   
 }
